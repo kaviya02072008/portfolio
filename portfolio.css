@@ -1,0 +1,72 @@
+.header img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    text-align: left;
+}
+.header{
+    display: flex;
+    background-color:rgb(0, 170, 255) ;
+    color: black;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+    
+    
+}
+.section,.skills,.contact,.about,.education{
+    max-width: 900px;
+    width: 100%;
+    border-bottom: 2px dotted;
+    
+}
+#head{
+    max-width: 900px;
+    width: 100%;
+}
+
+.project{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(100, 98, 98);
+    box-shadow: 0 4px 8px black;
+    border-radius: 8px;
+    display: inline-block;
+    
+}
+body{
+    margin:10px auto;
+    max-width: 900px;
+    border: 1px solid black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px;
+    padding :30px;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+@media (max-width:600px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .header img{
+        width: 100px;
+        height: 100px;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .project{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
